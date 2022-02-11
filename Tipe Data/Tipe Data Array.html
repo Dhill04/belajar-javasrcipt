@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <Script>
+
+        let arrayKosong =[]
+
+        let arrayNama = ["Fadhil", "Setiawan"]
+
+        // menambah data array 
+        const names = []
+        names.push("Fadhil")
+        names.push("Setiawan")
+        names.push("Dimas","Mughis")
+
+        console.table(names)
+
+        // untuk mengecek index data array
+        console.info(names[0])
+        console.info(names[1])
+        console.info(names[2])
+
+        //cara mengubah array
+        names[0] = "Progamer"
+
+        console.table(names)
+
+        //cara menghapus array
+        delete names [1]
+
+        console.table(names)
+        names.push("setiawan lagi")
+
+        console.table(names)
+
+        names[1] = "Fadhil lagi"
+        
+        console.table(names)// dihapus datanya alias isi arraynya bukan berarti indexnya kehapus melainkan bisa lagi di pakai alias di ubah juga bisa 
+        
+        names.push(["Fadhil","setiawan"])
+        console.table(names)
+
+
+    </Script>
+</body>
+</html>

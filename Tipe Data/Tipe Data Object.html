@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+        //cara langsung memasukan semua attribute
+        const person = {
+            "Nama Lengkap" : "Fadhl Setiawan",
+            Alamat : "Kota Sukabumi",
+            Umur : "17"
+        }
+
+        console.info(`Nama : ${person["Nama Lengkap"]}`)
+        console.info(`Alamat : ${person.Alamat}`)
+        console.info(`Umur : ${person.Umur}`)
+
+
+        //mengubah property / attribute 
+        //person["Nama"] = "Fadhil Setiawan"
+        //person["Alamat"] = "Kota Sukabumi"
+        //person["Umur"] = 17
+        
+        console.table(person)
+
+        //menghapus
+        delete person["Umur"]
+        console.table(person)
+
+
+
+
+    </script>
+</body>
+</html>
